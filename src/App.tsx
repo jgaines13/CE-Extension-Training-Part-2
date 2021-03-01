@@ -35,10 +35,7 @@ export const App: React.FC<{}> = hot(() => {
   return (
 
     <ExtensionProvider>
-      <div><h1> Hello World </h1></div>
       <EmbedDashboard filters={filters} id={id}/>
-       {/* <Embed filters={filters} id={id}/>    */}
-     {/* <GetLocationData/> */}
     </ExtensionProvider>
   )
 })
