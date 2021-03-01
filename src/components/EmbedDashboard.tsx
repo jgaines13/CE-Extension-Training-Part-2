@@ -2,13 +2,9 @@ import React, { useCallback } from 'react';
 import styled from "styled-components";
 import { LookerEmbedSDK } from '@looker/embed-sdk';
 
-// create iframe of dashboard
-
 
 const EmbedDashboard = (props: any) => {
 
-
-  
   const DashboardDiv = useCallback((el:any ) => {
     LookerEmbedSDK.init('https://marketplace.dev.looker.com')
     LookerEmbedSDK.createDashboardWithId(props.id)
@@ -21,8 +17,6 @@ const EmbedDashboard = (props: any) => {
       console.error('An unexpected error occurred', error)
     })
   }, [])
-
- 
 
 
   return (
